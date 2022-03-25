@@ -1,6 +1,6 @@
 let colliderWidth = 50;
 let colliderHeight = 10;
-let walkSpeed = 7;
+let walkSpeed = 8;
 
 function Player(x, y) {
     this.pos = new Vector(x, y);
@@ -58,7 +58,7 @@ function Player(x, y) {
         }
         //console.log(this.vel, this.pos);
         //this.vel = this.vel.sub(this.vel.normalise().scale(0.1));
-        this.jumpPower = Math.max(0, this.jumpPower - .05);
+        this.jumpPower = Math.max(0, this.jumpPower - .02);
         if (this.jumpPower > 0) {
             //this.vel.y -= this.jumpPower * 2.2;
         }
